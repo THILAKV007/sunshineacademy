@@ -6,7 +6,7 @@ const ContactUs=forwardRef((props,ref)=> {
       <div className="heading-text-style">Contact Us</div>
       <div className="sub-heading-style">
         We offered industries leading course for medical coding & Medical
-        billing course for medical coding & Medical billing
+        billing course for medical coding & Medical billing at
       </div>
       <div className="contact-content">
         <img src="/assets/contact_us_bg.png" height={630}></img>
