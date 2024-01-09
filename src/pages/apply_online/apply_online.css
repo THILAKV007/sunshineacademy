@@ -1,0 +1,57 @@
+@import url('https://fonts.google.com/specimen/mitr?query=mitr');
+@import url("https://fonts.google.com/?query=michroma");
+@import url("https://fonts.google.com/specimen/Lexend?query=lexend");
+@import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+.apply-online-bg {
+  background-color: #e6e6e6;
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.form-title-style {
+  color: #000;
+  text-align: center;
+  font-family: "Lexend" sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.dynamic-forms-style {
+  background-color: white;
+  height: auto;
+  width: auto;
+  padding: 40px;
+  margin-top: 63px;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 100px;
+}
+.submit-btn {
+  height: 58px;
+  width: auto;
+  margin-top: 30px;
+  margin-left: 10%;
+  margin-right: 30%;
+  background-color: #f43e04;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-family: Michroma;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+input {
+  margin-top: 5%;
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid #bfbfbf;
+}

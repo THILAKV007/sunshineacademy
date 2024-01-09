@@ -1,0 +1,109 @@
+.services-bg {
+  background-color: white;
+  height: max-content;
+}
+.heading-text-style {
+  color: #000;
+  font-family: Mitr;
+  font-size: 54px;
+  margin-top: 32px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 73px; /* 135.185% */
+}
+.sub-heading-style {
+  color: #6c6565;
+  text-align: center;
+  font-family: Mitr;
+  font-size: 20px;
+  margin-top: 19px;
+  margin-left: 35%;
+  margin-right: 35%;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.feature-types {
+    margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  gap: 31px;
+  margin-bottom: 300px;
+}
+.feature-type-heading {
+  color: #000;
+  font-family: Mitr;
+  font-size: 32px;
+  margin-top: 52px;
+  text-align: start;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.feature-type-subheading {
+  color: #000;
+  font-family: Mitr;
+  margin-top: 52px;
+  font-size: 24px;
+  font-style: normal;
+  text-align: start;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.Subtract1:hover{
+  background-color: #F43E04;
+}
+
+.Subtract2:hover{
+  background-color: #F43E04;
+}
+
+.Subtract3:hover {
+  background-color: #F43E04;
+  
+}.Component1:hover{
+  background-color: #F43E04;
+}.Component2:hover{
+  background-color: #F43E04;
+}.Component3:hover{
+  background-color: #F43E04;
+}
+.Ellipse1{
+  height: 144px;
+  width: 144px;
+  border-radius: 100%;
+  background-color: #e6e6e6;
+  border: 4px solid white;
+}
+.Ellipse2{
+  height: 144px;
+  width: 144px;
+  border-radius: 100%;
+  background-color: #e6e6e6;
+  border: 4px solid white;
+}
+.Ellipse3{
+  height: 144px;
+  width: 144px;
+  border-radius: 100%;
+  background-color: #e6e6e6;
+  border: 4px solid white;
+}
+
+.online-training-img {
+  background-image: url(/public/assets/pc-image.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.job-training-img {
+  background-image: url(/public/assets/job-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.placements-img {
+  background-image: url(/public/assets/pc-with-location.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}

@@ -1,0 +1,112 @@
+@import url('https://fonts.google.com/specimen/mitr?query=mitr');
+@import url("https://fonts.google.com/?query=michroma");
+@import url("https://fonts.google.com/specimen/Lexend?query=lexend");
+@import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+/* .............................Header..................... */
+.header-style {
+    height: 96px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 3px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  }
+  .top-flag-style {
+    height: 12px;
+    width: 100%;
+    background-color: #f43e04;
+  }
+  
+  .header-components {
+    height: 84px;
+    display: flex;
+    margin-left: 63px;
+    margin-right: 63px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .app-services {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .app-services-style { 
+    color: #000;
+    font-family: Mitr, sans-serif; 
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .apply-btn {
+    height: auto;
+    width: auto;
+    text-align: center;
+    padding: 12px;
+    background-color: #f43e04;
+    color: #fff;
+    font-family: Michroma,sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  /* ................................................Header-content...................... */
+  .header-content {
+    width: fit-content;
+    margin-left: 4%;
+    margin-right: 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .selected-section {
+    margin-top: 4px;
+    width: 64px;
+    height: 4px;
+    flex-shrink: 0;
+    border-radius: 6px;
+  background: #F43E04;
+  box-shadow: 0px 4px 13px 0px #F43E04;
+  }
+  .txt-contents {
+    display: block;
+  }
+  
+  .hash-txt-style {
+    display: flex;
+    gap: 28px;
+    color: #f43e04;
+    font-family: 'Michroma', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .big-txt-style {
+    color: #000;
+    font-family: Mitr, sans-serif;
+    margin-top: 34px;
+    font-size: 54px;
+    font-style: normal;
+    text-align: start;
+    font-weight: 400;
+    line-height: 73px; /* 135.185% */
+  }
+  .sub-title-style {
+    color: #6c6565;
+    margin-top: 2px;
+    font-family: Mitr, sans-serif; 
+    font-size: 20px;
+    text-align: start;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  
+  .wrapper {
+    height: 70%;
+  }

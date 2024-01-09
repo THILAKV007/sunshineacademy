@@ -1,0 +1,49 @@
+.contact-content {
+  margin-top: 61px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 4%;
+  margin-right: 5%;
+  gap: 80px;
+  margin-bottom: 142px;
+}
+.contact-form {
+  display: block;
+  text-align: start;
+}
+.form-title-style {
+  color: #000;
+  text-align: center;
+  font-family: Lexend;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+input {
+  margin-top: 8%;
+  width: 32rem;
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid #bfbfbf;
+}
+.contact-us-btn {
+  height: 58px;
+  width: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 30px;
+  background-color: #f43e04;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-family: Michroma;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

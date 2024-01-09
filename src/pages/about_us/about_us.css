@@ -1,0 +1,20 @@
+.about-us-bg {
+  background-color: white;
+  height: max-content;
+}
+.about-us-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+.about-us-style {
+  color: #000;
+  font-family: Mitr;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
