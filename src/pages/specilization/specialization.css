@@ -1,10 +1,10 @@
 .specialization-types {
-  display: flex;
+  /* display: flex; */
   margin-top: 24px;
-  margin-left: 4%;
+  margin-left: 5%;
   margin-right: 5%;
-  justify-content: space-between;
-  align-items: center;
+  /* justify-content: space-between; */
+  /* align-items: center; */
 }
 .types-bg {
   background-color: #e6e6e6;
@@ -48,8 +48,8 @@
 .enroll-btn {
   height: 58px;
   width: auto;
-  margin-left: 45%;
-  margin-right: 45%;
+  max-width: 200px;
+  margin: auto;
   margin-top: 30px;
   background-color: #f43e04;
   color: #fff;

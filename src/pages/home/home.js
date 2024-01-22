@@ -19,7 +19,7 @@ function Home({ innerRefs }) {
   console.log('thereee', innerRefs)
   return (
     <>
-      <NavBar
+      {/* <NavBar
         innerRefs={{
           dashboardRef,
           servicesRef,
@@ -27,11 +27,11 @@ function Home({ innerRefs }) {
           aboutUsRef,
           contactUsRef,
         }}
-      />
-      <Dashboard ref={dashboardRef}/> 
+      /> */}
+      {/* <Dashboard ref={dashboardRef}/> 
       <Services ref={servicesRef}/>
-      <Courses ref={coursesRef} />  
-      <AboutUs ref={aboutUsRef}/>
+      <Courses ref={coursesRef} />  */}
+      <AboutUs ref={aboutUsRef} />
       <OurSpecialization />
       <Clients />
       <ContactUs ref={contactUsRef} />
