@@ -14,6 +14,7 @@
   align-items: center;
   height: 123px;
   padding-right: 20px;
+  gap: 15px;
 }
 .set-bg-circle {
   height: 64px;
@@ -40,7 +41,7 @@
   text-align: start;
   color: #000;
   font-family: Mitr;
-  font-size: 34px;
+  font-size: 25px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -62,4 +63,5 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  padding: 15px 10px;
 }
