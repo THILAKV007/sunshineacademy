@@ -165,7 +165,7 @@ const Services = forwardRef((props, ref) => {
             ></div>
           </div>
         </div>
-        {/* ..................................................Job Training.............................................. */}
+        {/* ....................................Job Training............................ */}
         <div
           className='Component2'
           onMouseEnter={() => changeBgColor(2)}

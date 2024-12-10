@@ -18,10 +18,7 @@ const AboutUs = forwardRef((props, ref) => {
           to serve the society through Coaching
         </div>
         <div>
-          <img
-            // style={{ height: '100%', width: '100%' }}
-            src='/assets/about-us-ref.png'
-          />
+          <img src='/assets/about-us-ref.png' />
         </div>
       </div>
     </section>
