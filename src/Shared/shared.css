@@ -1,56 +1,55 @@
 @import url('https://fonts.google.com/specimen/mitr?query=mitr');
-@import url("https://fonts.google.com/?query=michroma");
-@import url("https://fonts.google.com/specimen/Lexend?query=lexend");
+@import url('https://fonts.google.com/?query=michroma');
+@import url('https://fonts.google.com/specimen/Lexend?query=lexend');
 @import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
 
 .header-style {
-    height: 96px;
-    width: 100%;
-    background: #fff;
-    box-shadow: 3px 4px 20px 0px rgba(0, 0, 0, 0.1);
-  }
-  .top-flag-style {
-    height: 12px;
-    width: 100%;
-    background-color: #f43e04;
-  }
-  
-  .set-components {
-    height: 84px;
-    display: flex;
-    margin-left: 63px;
-    margin-right: 63px;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .header-contents {
-    display: flex;
-    gap: 50px;
-    align-items: center;
-    justify-content: space-evenly;
-    
-  }
-  .app-services-style { 
-    color: #000;
-    font-family: Mitr, sans-serif; 
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-  
-  .apply-btn {
-    height: auto;
-    width: auto;
-    text-align: center;
-    padding: 12px;
-    background-color: #f43e04;
-    color: #fff;
-    font-family: Michroma,sans-serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
+  height: 96px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 3px 4px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.top-flag-style {
+  height: 12px;
+  width: 100%;
+  background-color: #f43e04;
+}
+
+.set-components {
+  height: 84px;
+  display: flex;
+  margin-left: 63px;
+  margin-right: 63px;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-contents {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.app-services-style {
+  color: #000;
+  font-family: Mitr, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.apply-btn {
+  height: auto;
+  width: auto;
+  text-align: center;
+  padding: 12px;
+  background-color: #f43e04;
+  color: #fff;
+  font-family: Michroma, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
