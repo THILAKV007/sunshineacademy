@@ -1,36 +1,70 @@
 import '../specilization/specialization.css'
+import { motion } from 'framer-motion'
 
 function OurSpecialization() {
   return (
     <section className='about-us-bg'>
       <div className='heading-text-style'>Our Specialization</div>
+
       <div className='specialization-types'>
-        <div className='types-bg'>
+        {/* Medical Coding */}
+        <motion.div
+          className='types-bg'
+          initial={{ y: 20 }}
+          animate={{ y: 0 }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          transition={{ duration: 0.5 }}
+        >
           <span className='set-bg-circle'>
-            <img src='/assets/medical-coding.png' style={{ padding: 16 }}></img>
+            <img
+              src='/assets/medical-coding.png'
+              style={{ padding: 16 }}
+              alt='Medical Coding'
+            />
           </span>
-          <span className='specialization-types-style'>Medical coding</span>
-        </div>
-        <div className='types-bg'>
+          <span className='specialization-types-style'>Medical Coding</span>
+        </motion.div>
+
+        {/* Medical Billing */}
+        <motion.div
+          className='types-bg'
+          initial={{ y: 20 }}
+          animate={{ y: 0 }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          transition={{ duration: 0.5 }}
+        >
           <span className='set-bg-circle'>
             <img
               src='/assets/medical-billing.png'
               style={{ padding: 16 }}
-            ></img>
+              alt='Medical Billing'
+            />
           </span>
           <span className='specialization-types-style'>Medical Billing</span>
-        </div>
-        <div className='types-bg'>
+        </motion.div>
+
+        {/* Healthcare Training */}
+        <motion.div
+          className='types-bg'
+          initial={{ y: 20 }}
+          animate={{ y: 0 }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          transition={{ duration: 0.5 }}
+        >
           <span className='set-bg-circle'>
             <img
               src='/assets/health-insurance.png'
               style={{ padding: 16 }}
-            ></img>
+              alt='Healthcare Training'
+            />
           </span>
           <span className='specialization-types-style'>
             Healthcare Training
           </span>
-        </div>
+        </motion.div>
       </div>
       <div className='explanation'>
         <ul>
