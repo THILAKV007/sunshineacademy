@@ -1,40 +1,103 @@
-import { forwardRef } from "react";
-import "../Contact_us/contact_us.css";
-const ContactUs=forwardRef((props,ref)=> {
+import { forwardRef } from 'react'
+import { motion } from 'framer-motion'
+import '../Contact_us/contact_us.css'
+
+const ContactUs = forwardRef((props, ref) => {
+  // Animation Variants
+  const containerVariant = {
+    hidden: { opacity: 0, y: -50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+        when: 'beforeChildren',
+        staggerChildren: 0.2,
+      },
+    },
+  }
+
+  const childVariant = {
+    hidden: { opacity: 0, x: -50 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
+  }
+
+  const imageVariant = {
+    hidden: { scale: 0 },
+    visible: { scale: 1, transition: { duration: 1 } },
+  }
+
+  const buttonVariant = {
+    hidden: { opacity: 0, scale: 0 },
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.6 } },
+  }
+
   return (
-    <section className="about-us-bg" ref={ref}> 
-      <div className="heading-text-style">Contact Us</div>
-      <div className="sub-heading-style">
+    <motion.section
+      className='about-us-bg'
+      ref={ref}
+      initial='hidden'
+      animate='visible'
+      variants={containerVariant}
+    >
+      <motion.div className='heading-text-style' variants={childVariant}>
+        Contact Us
+      </motion.div>
+
+      <motion.div className='sub-heading-style' variants={childVariant}>
         We offered industries leading course for medical coding & Medical
         billing course for medical coding & Medical billing at
-      </div>
-      <div className="contact-content">
-        <img src="/assets/contact_us_bg.png" height={630}></img>
-        <div className="contact-form">
+      </motion.div>
+
+      <div className='contact-content'>
+        <motion.img
+          src='/assets/contact_us_bg.png'
+          height={630}
+          alt='Contact Background'
+          variants={imageVariant}
+        />
+
+        <motion.div
+          className='contact-form'
+          variants={childVariant}
+          initial='hidden'
+          animate='visible'
+        >
           <form>
-            <label className="form-title-style">First Name</label>
+            <motion.label className='form-title-style' variants={childVariant}>
+              First Name
+            </motion.label>
+            <motion.input type='text' name='name' variants={childVariant} />
           </form>
-          <input type="text" name="name"  />
+
           <form style={{ marginTop: 50 }}>
-            <label className="form-title-style">Mail-id</label>
+            <motion.label className='form-title-style' variants={childVariant}>
+              Mail-id
+            </motion.label>
+            <motion.input type='text' name='name' variants={childVariant} />
           </form>
-          <input type="text" name="name"  />
+
           <form style={{ marginTop: 50 }}>
-            <label className="form-title-style">Phone Number</label>
+            <motion.label className='form-title-style' variants={childVariant}>
+              Phone Number
+            </motion.label>
+            <motion.input type='text' name='name' variants={childVariant} />
           </form>
-          <input type="text" name="name"  />
+
           <form style={{ marginTop: 50 }}>
-            <label className="form-title-style">Message</label>
+            <motion.label className='form-title-style' variants={childVariant}>
+              Message
+            </motion.label>
+            <motion.input type='text' name='name' variants={childVariant} />
           </form>
-          <input type="text" name="name"  />
-          <div className="contact-us-btn">
-        Contact Us
-     </div>
-        </div>
-        
+
+          <motion.div className='contact-us-btn' variants={buttonVariant}>
+            Contact Us
+          </motion.div>
+        </motion.div>
       </div>
-     
-    </section>
-  );
-});
-export default ContactUs;
+    </motion.section>
+  )
+})
+
+export default ContactUs
