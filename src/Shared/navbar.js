@@ -54,7 +54,12 @@ function NavBar({ innerRefs }) {
               <div />
             )}
           </div>
-          <div onClick={() => gotoSection(1)}>
+          <div
+            onClick={() => {
+              navigate('/home')
+              gotoSection(1)
+            }}
+          >
             <div className='app-services-style'>Service</div>
             {selectedSection == 1 ? (
               <div className='selected-section'></div>
@@ -62,7 +67,12 @@ function NavBar({ innerRefs }) {
               <div />
             )}
           </div>
-          <div onClick={() => gotoSection(2)}>
+          <div
+            onClick={() => {
+              navigate('/home')
+              gotoSection(2)
+            }}
+          >
             <div className='app-services-style'>Course</div>
             {selectedSection == 2 ? (
               <div className='selected-section'></div>
@@ -70,7 +80,12 @@ function NavBar({ innerRefs }) {
               <div />
             )}
           </div>
-          <div onClick={() => gotoSection(3)}>
+          <div
+            onClick={() => {
+              navigate('/home')
+              gotoSection(3)
+            }}
+          >
             <div className='app-services-style'>About Us</div>
             {selectedSection == 3 ? (
               <div className='selected-section'></div>
@@ -78,7 +93,12 @@ function NavBar({ innerRefs }) {
               <div />
             )}
           </div>
-          <div onClick={() => gotoSection(4)}>
+          <div
+            onClick={() => {
+              navigate('/home')
+              gotoSection(4)
+            }}
+          >
             <div className='app-services-style'>Contact</div>
             {selectedSection == 4 ? (
               <div className='selected-section'></div>
