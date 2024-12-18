@@ -1,7 +1,10 @@
-import { forwardRef } from 'react'
+import { forwardRef, useState } from 'react'
 import '../about_us/about_us.css'
+import { motion } from 'framer-motion'
 
 const AboutUs = forwardRef((props, ref) => {
+  const [isHovered, setIsHovered] = useState(false)
+
   return (
     <section className='about-us-bg' ref={ref}>
       <div className='heading-text-style'>About Us</div>
@@ -9,7 +12,11 @@ const AboutUs = forwardRef((props, ref) => {
         We offered industries leading course for medical coding & Medical
         billing course for medical coding & Medical billing
       </div>
-      <div className='about-us-content'>
+      <motion.div
+        className='about-us-content'
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
         <div className='about-us-style'>
           “The right skill-set is critical for today’s high-quality job market”.
           At SSA (Sun Shine Academy) you will receive up-to-date career skills
@@ -18,10 +25,17 @@ const AboutUs = forwardRef((props, ref) => {
           to serve the society through Coaching
         </div>
         <div>
-          <img src='/assets/about-us-ref.png' />
+          <motion.img
+            src='/assets/about-us-ref.png'
+            alt='About Us'
+            className='about-us-image'
+            animate={isHovered ? { rotate: 360, x: -50 } : { rotate: 0, x: 0 }}
+            transition={{ duration: 2.5, ease: 'easeInOut' }}
+          />
         </div>
-      </div>
+      </motion.div>
     </section>
   )
 })
+
 export default AboutUs

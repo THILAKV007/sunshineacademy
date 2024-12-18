@@ -51,8 +51,9 @@ const ContactUs = forwardRef((props, ref) => {
 
       <div className='contact-content'>
         <motion.img
-          src='/assets/contact_us_bg.png'
+          src='/assets/contact_us_bg.jpg'
           height={630}
+          style={{ maxWidth: '55%' }}
           alt='Contact Background'
           variants={imageVariant}
         />
