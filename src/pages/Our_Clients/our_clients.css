@@ -1,26 +1,30 @@
 @import url('https://fonts.google.com/specimen/mitr?query=mitr');
-@import url("https://fonts.google.com/?query=michroma");
-@import url("https://fonts.google.com/specimen/Lexend?query=lexend");
+@import url('https://fonts.google.com/?query=michroma');
+@import url('https://fonts.google.com/specimen/Lexend?query=lexend');
 @import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
 
 .client-list-bg {
-    margin-top: 53px;
+  margin-top: 53px;
   height: 162px;
   width: auto;
   display: flex;
   background-color: #ffddd2;
-  justify-content: space-evenly; 
+  justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 141px;
+  margin-bottom: 100px;
   animation: animateCloud 15s linear infinite;
-  background-image: url("/public/assets/clients.png");  
-  background-position:center; 
+  background-image: url('/public/assets/clients.png');
+  background-position: center;
   background-repeat: repeat-x;
-  
 }
 
-
-    
-@keyframes animateCloud  {0% {background-position: 0 0;}100% {background-position: 1280px 0;}}
+@keyframes animateCloud {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1280px 0;
+  }
+}

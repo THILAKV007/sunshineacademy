@@ -44,25 +44,20 @@
   height: auto;
   width: auto;
   text-align: center;
-  padding: 12px;
+  padding: 10px;
   background-color: #f43e04;
   color: #fff;
   font-family: Michroma, sans-serif;
-  font-size: 20px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  max-width: 120px;
+  border-radius: 10px;
 }
 
 /* ................................................Header-content...................... */
-.header-content {
-  width: fit-content;
-  margin-left: 4%;
-  margin-right: 4%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 .selected-section {
   margin-top: 4px;
   width: 64px;
@@ -71,40 +66,6 @@
   border-radius: 6px;
   background: #f43e04;
   box-shadow: 0px 4px 13px 0px #f43e04;
-}
-.txt-contents {
-  display: block;
-}
-
-.hash-txt-style {
-  display: flex;
-  gap: 28px;
-  color: #f43e04;
-  font-family: 'Michroma', sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.big-txt-style {
-  color: #000;
-  font-family: Mitr, sans-serif;
-  margin-top: 34px;
-  font-size: 50px;
-  font-style: normal;
-  text-align: start;
-  font-weight: 400;
-  line-height: 73px; /* 135.185% */
-}
-.sub-title-style {
-  color: #6c6565;
-  margin-top: 2px;
-  font-family: Mitr, sans-serif;
-  font-size: 20px;
-  text-align: start;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
 }
 
 .wrapper {

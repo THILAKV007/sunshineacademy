@@ -1,6 +1,9 @@
 import { forwardRef } from 'react'
 import { motion } from 'framer-motion'
 import '../Contact_us/contact_us.css'
+import { Box } from '@mui/material'
+import HeadingText from '../../Shared/HeadingText'
+import SubTitle from '../../Shared/SubTitle'
 
 const ContactUs = forwardRef((props, ref) => {
   // Animation Variants
@@ -33,7 +36,7 @@ const ContactUs = forwardRef((props, ref) => {
   }
 
   return (
-    <motion.section
+    <motion.Box
       className='about-us-bg'
       ref={ref}
       initial='hidden'
@@ -41,22 +44,39 @@ const ContactUs = forwardRef((props, ref) => {
       variants={containerVariant}
     >
       <motion.div className='heading-text-style' variants={childVariant}>
-        Contact Us
+        <HeadingText>Contact Us</HeadingText>
       </motion.div>
 
-      <motion.div className='sub-heading-style' variants={childVariant}>
-        We offered industries leading course for medical coding & Medical
-        billing course for medical coding & Medical billing at
+      <motion.div variants={childVariant}>
+        <SubTitle>
+          We offered industries leading course for medical coding & Medical
+          billing course for medical coding & Medical billing at
+        </SubTitle>
       </motion.div>
 
-      <div className='contact-content'>
-        <motion.img
-          src='/assets/contact_us_bg.jpg'
-          height={630}
-          style={{ maxWidth: '55%' }}
-          alt='Contact Background'
-          variants={imageVariant}
-        />
+      <Box
+        sx={{
+          marginTop: '61px',
+          display: { sm: 'flex' },
+          justifyContent: 'center',
+          alignItems: 'center',
+          marginLeft: '4%',
+          marginRight: ' 5%',
+          gap: '80px',
+          marginBottom: '142px',
+        }}
+      >
+        <Box
+          sx={{ maxWidth: { xs: '100%', sm: '55%' }, maxHeight: { sm: 430 } }}
+        >
+          <motion.img
+            src='/assets/contact_us_bg.jpg'
+            height={'100%'}
+            style={{ maxWidth: '100%' }}
+            alt='Contact Background'
+            variants={imageVariant}
+          />
+        </Box>
 
         <motion.div
           className='contact-form'
@@ -71,33 +91,55 @@ const ContactUs = forwardRef((props, ref) => {
             <motion.input type='text' name='name' variants={childVariant} />
           </form>
 
-          <form style={{ marginTop: 50 }}>
+          <form style={{ marginTop: 40 }}>
             <motion.label className='form-title-style' variants={childVariant}>
               Mail-id
             </motion.label>
             <motion.input type='text' name='name' variants={childVariant} />
           </form>
 
-          <form style={{ marginTop: 50 }}>
+          <form style={{ marginTop: 40 }}>
             <motion.label className='form-title-style' variants={childVariant}>
               Phone Number
             </motion.label>
             <motion.input type='text' name='name' variants={childVariant} />
           </form>
 
-          <form style={{ marginTop: 50 }}>
+          <form style={{ marginTop: 40 }}>
             <motion.label className='form-title-style' variants={childVariant}>
               Message
             </motion.label>
             <motion.input type='text' name='name' variants={childVariant} />
           </form>
 
-          <motion.div className='contact-us-btn' variants={buttonVariant}>
-            Contact Us
+          <motion.div variants={buttonVariant}>
+            <Box
+              sx={{
+                width: 'auto',
+                marginLeft: '20%',
+                marginRight: '20%',
+                marginTop: '30px',
+                backgroundColor: '#f43e04',
+                color: '#fff',
+                textAlign: 'center',
+                alignItems: 'center',
+                display: 'flex',
+                justifyContent: 'center',
+                fontFamily: 'Michroma',
+                fontSize: { xs: '13px', md: '20px' },
+                fontStyle: 'normal',
+                fontWeight: 400,
+                lineHeight: 'normal',
+                padding: '8px',
+                borderRadius: '10px',
+              }}
+            >
+              Contact Us
+            </Box>
           </motion.div>
         </motion.div>
-      </div>
-    </motion.section>
+      </Box>
+    </motion.Box>
   )
 })
 

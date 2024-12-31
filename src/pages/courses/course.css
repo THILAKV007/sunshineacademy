@@ -1,29 +1,15 @@
 @import url('https://fonts.google.com/specimen/mitr?query=mitr');
-@import url("https://fonts.google.com/?query=michroma");
-@import url("https://fonts.google.com/specimen/Lexend?query=lexend");
+@import url('https://fonts.google.com/?query=michroma');
+@import url('https://fonts.google.com/specimen/Lexend?query=lexend');
 @import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
 
 .courses-bg {
   background-color: white;
   height: max-content;
 }
-.course-list-tile {
-  height: 60px;
-  width: auto;
-  margin-top: 16px;
-  margin-left: 20%;
-  margin-right: 20%;
-  border-radius: 45px;
-  background-color: #f43e04;
-}
-.course-lists {
-  height: 50px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
+
 .courses-examples {
   display: flex;
   margin-top: 53px;
@@ -31,33 +17,33 @@
   justify-content: center;
   margin-bottom: 83px;
 }
-.course-heading{
+.course-heading {
   margin-top: 63px;
   display: flex;
   justify-content: center;
   color: #000;
   font-family: 'Mitr', sans-serif;
-font-size: 54px;
-font-style: normal;
-font-weight: 400;
-line-height: 73px; /* 135.185% */
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 73px; /* 135.185% */
 }
-.apply-course{
+.apply-course {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-left: 10%;
   margin-right: 10%;
 }
-.course-detail-style{
+.course-detail-style {
   color: #000;
-font-family: Mitr;
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  font-family: Mitr;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
-.course-apply-dialog-style{
+.course-apply-dialog-style {
   background-color: white;
   height: auto;
   width: auto;

@@ -19,7 +19,6 @@
 
 .set-components {
   height: 84px;
-  display: flex;
   margin-left: 63px;
   margin-right: 63px;
   justify-content: space-between;
@@ -44,11 +43,11 @@
   height: auto;
   width: auto;
   text-align: center;
-  padding: 12px;
+  padding: 8px;
   background-color: #f43e04;
   color: #fff;
   font-family: Michroma, sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
