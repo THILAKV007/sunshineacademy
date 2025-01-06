@@ -1,6 +1,6 @@
 import { forwardRef, useState } from 'react'
 import '../services/services.css'
-import { Box } from '@mui/material'
+import { Box, Grid } from '@mui/material'
 import HeadingText from '../../Shared/HeadingText'
 import SubTitle from '../../Shared/SubTitle'
 
@@ -126,23 +126,30 @@ const Services = forwardRef((props, ref) => {
         })}
       </Box>
 
-      <Box
+      <Grid
+        container
+        spacing={3}
         sx={{
           marginTop: '80px',
-          display: { md: 'flex' },
-          justifyContent: 'center',
-          gap: '31px',
           marginBottom: '50px',
+          justifyContent: 'stars',
+          px: { xs: 0.8, sm: 5, lg: 0 },
         }}
       >
-        {data2.map((item) => {
-          return (
+        {data2.map((item) => (
+          <Grid
+            item
+            xs={12} // 1 column in xs
+            sm={6} // 2 columns in sm and md
+            lg={4} // 3 columns in lg and up
+            key={item.id} // Adding a key is essential for performance
+          >
             <Box
               onMouseEnter={() => setIsHover(item.id)}
               onMouseOut={() => setIsHover(0)}
               className='Component1'
               sx={{
-                width: { xs: '100%' },
+                width: '100%',
                 height: { xs: 300, md: 404 },
                 position: 'relative',
               }}
@@ -207,7 +214,6 @@ const Services = forwardRef((props, ref) => {
                     border: '4px solid white',
                   }}
                 />
-
                 <Box
                   sx={{
                     width: { xs: 60, md: 72 },
@@ -222,9 +228,9 @@ const Services = forwardRef((props, ref) => {
                 />
               </Box>
             </Box>
-          )
-        })}
-      </Box>
+          </Grid>
+        ))}
+      </Grid>
     </Box>
   )
 })

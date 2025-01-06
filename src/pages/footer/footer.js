@@ -20,7 +20,7 @@ function Footer() {
             sx={{
               color: '#000',
               fontFamily: 'Mitr',
-              fontSize: { xs: '25px', md: '35px' },
+              fontSize: { xs: '23px', md: '35px' },
               fontStyle: 'normal',
               fontWeight: 400,
               lineHeight: 'normal',
@@ -39,7 +39,7 @@ function Footer() {
             sx={{
               color: '#000',
               fontFamily: 'Mitr',
-              fontSize: { xs: '25px', md: '35px' },
+              fontSize: { xs: '22px', md: '35px' },
               fontStyle: 'normal',
               fontWeight: 400,
               lineHeight: 'normal',
@@ -54,10 +54,20 @@ function Footer() {
               gap: '14px',
               justifyContent: { sm: 'center' },
               alignItems: 'center',
+              height: { xs: '20px', md: '40px' },
             }}
           >
-            <img src='/assets/Facebook.png'></img>
-            <img src='/assets/Twitter.png'></img>
+            <img
+              style={{
+                maxHeight: '100%',
+                maxWidth: '100%',
+              }}
+              src='/assets/Facebook.png'
+            />
+            <img
+              style={{ maxHeight: '100%', maxWidth: '100%' }}
+              src='/assets/Twitter.png'
+            />
           </Box>
           <div className='terms-policy'>Terms and condition</div>
         </Box>

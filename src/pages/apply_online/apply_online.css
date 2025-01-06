@@ -22,16 +22,13 @@
   font-weight: 400;
   line-height: normal;
 }
-.dynamic-forms-style {
-  background-color: white;
-  height: auto;
-  width: auto;
-  padding: 40px;
-  margin-top: 63px;
-  margin-left: 30%;
-  margin-right: 30%;
-  margin-bottom: 100px;
+
+@media only screen and (max-width: 768px) {
+  .form-title-style {
+    font-size: 15px !important;
+  }
 }
+
 .submit-btn {
   height: 58px;
   width: auto;

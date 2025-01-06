@@ -13,9 +13,8 @@ const Dashboard = forwardRef((props, ref) => {
         sx={{
           height: { md: '90vh' },
           width: 'fit-content',
-          marginLeft: '4%',
-          marginRight: '4%',
-          display: { md: 'flex' },
+          marginX: '4%',
+          display: { sm: 'flex' },
           justifyContent: 'space-between',
           alignItems: 'center',
         }}

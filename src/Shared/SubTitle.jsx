@@ -13,7 +13,7 @@ const SubTitle = ({ children }) => {
         fontStyle: 'normal',
         fontWeight: 300,
         lineHeight: 'normal',
-        mx: { xs: 2, md: 'auto' },
+        mx: { xs: 2, sm: 'auto' },
         maxWidth: '350px',
       }}
     >

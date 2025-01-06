@@ -187,7 +187,7 @@ function NavBar({ innerRefs }) {
         className='set-components'
       >
         <div className='app-logo' onClick={() => navigate('/home')}>
-          <img src='/assets/app-logo.png'></img>
+          <img style={{ cursor: 'pointer' }} src='/assets/app-logo.png' />
         </div>
         <div className='header-contents'>
           <div onClick={() => gotoSection(0)}>
@@ -251,7 +251,14 @@ function NavBar({ innerRefs }) {
             )}
           </div>
         </div>
-        <div className='apply-btn' onClick={() => navigate('/apply-online')}>
+        <div
+          className='apply-btn'
+          onClick={() => {
+            navigate('/home')
+            gotoSection(4)
+          }}
+          // onClick={() => navigate('/apply-online')}
+        >
           Apply Online
         </div>
       </Box>
