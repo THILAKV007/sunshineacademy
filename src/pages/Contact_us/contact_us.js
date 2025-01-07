@@ -92,10 +92,23 @@ const ContactUs = forwardRef((props, ref) => {
       </motion.div>
 
       <motion.div variants={childVariant}>
-        <SubTitle>
+        <Box
+          sx={{
+            color: '#6c6565',
+            marginTop: '2px',
+            fontFamily: 'Mitr, sans-serif',
+            fontSize: { xs: '15px', md: '20px' },
+            textAlign: 'center',
+            fontStyle: 'normal',
+            fontWeight: 300,
+            lineHeight: 'normal',
+            mx: { xs: 2, sm: 'auto' },
+            maxWidth: '450px',
+          }}
+        >
           We offer industry-leading courses for medical coding & medical
           billing.
-        </SubTitle>
+        </Box>
       </motion.div>
 
       <Box
