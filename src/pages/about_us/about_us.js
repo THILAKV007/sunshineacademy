@@ -11,10 +11,25 @@ const AboutUs = forwardRef((props, ref) => {
   return (
     <section className='about-us-bg' ref={ref}>
       <HeadingText>About Us</HeadingText>
-      <SubTitle>
-        We offered industries leading course for medical coding & Medical
-        billing course for medical coding & Medical billing
-      </SubTitle>
+      <Box
+        sx={{
+          color: '#6c6565',
+          marginTop: '2px',
+          fontFamily: 'Mitr, sans-serif',
+          fontSize: { xs: '15px', md: '20px' },
+          textAlign: 'center',
+          fontStyle: 'normal',
+          fontWeight: 300,
+          lineHeight: 'normal',
+          mx: { xs: 2, sm: 'auto' },
+          maxWidth: '600px',
+        }}
+      >
+        We offered industries leading course for medical
+        <br /> coding & Medical billing course for medical coding & Medical
+        billing
+      </Box>
+
       <motion.div
         className='about-us-content'
         onMouseEnter={() => setIsHovered(true)}
@@ -22,17 +37,16 @@ const AboutUs = forwardRef((props, ref) => {
       >
         <Box
           sx={{
-            marginTop: { md: '-100px' },
-            display: { md: 'flex' },
+            marginTop: { sm: 4, md: '-100px' },
+            display: { sm: 'flex' },
             justifyContent: 'space-between',
             alignItems: 'center',
-            marginLeft: '4%',
-            marginRight: '4%',
+            marginX: '4%',
           }}
         >
           <Box
             sx={{
-              maxWidth: { md: '60%' },
+              maxWidth: { sm: '50%', md: '60%' },
               fontFamily: 'Mitr',
               fontSize: { xs: '13px', md: '20px' },
               fontStyle: 'normal',
@@ -52,6 +66,10 @@ const AboutUs = forwardRef((props, ref) => {
             sx={{
               marginRight: { xs: '0px', md: '30px' },
               mt: { xs: '20px', md: 0 },
+              width: { xs: '100%', sm: '50%', md: '100%' },
+              display: { xs: '', sm: 'flex', md: '' },
+              justifyContent: 'center',
+              alignItems: 'center',
             }}
           >
             <motion.img

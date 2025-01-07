@@ -12,7 +12,7 @@ function OurSpecialization() {
         sx={{
           display: { sm: 'flex' },
           marginTop: '24px',
-          marginX: { xs: '10%', md: '15%' },
+          marginX: { xs: '10%', sm: '3%', md: '15%' },
           justifyContent: 'space-between',
           alignItems: 'center',
         }}
@@ -116,20 +116,19 @@ function OurSpecialization() {
           fontSize: { xs: 18, md: 24 },
           fontWeight: 300,
           textAlign: 'center',
-          marginTop: 7,
+          marginTop: 3,
           mx: 3,
         }}
       >
         All of us at SSA (Sun Shine Academy), look forward to helping you get
         the career training you need to get ahead in life.
         <br />
-        <br />
         Enroll today – and take the next step toward a brighter tomorrow.
       </Box>
       <Box
         sx={{
           width: 'auto',
-          marginX: { xs: '10%', md: '42%' },
+          marginX: { xs: '10%', sm: '40%', md: '42%' },
           marginTop: '30px',
           backgroundColor: '#f43e04',
           color: '#fff',

@@ -14,7 +14,7 @@ const SubTitle = ({ children }) => {
         fontWeight: 300,
         lineHeight: 'normal',
         mx: { xs: 2, sm: 'auto' },
-        maxWidth: '350px',
+        maxWidth: '600px',
       }}
     >
       {children}
